@@ -14,11 +14,11 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #ff6e7f;
+  background: #fd939f;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #bfe9ff, #ff6e7f);
+  background: -webkit-linear-gradient(to bottom, #bfe9ff, #fd939f);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #bfe9ff, #ff6e7f);
+  background: linear-gradient(to bottom, #bfe9ff, #fd939f);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .reveal {
@@ -152,9 +152,9 @@ body {
   width: 90%;
   margin: 20px auto;
   text-align: left;
-  font-size: 0.55em;
   font-family: monospace;
-  line-height: 1.2em;
+  font-size: 16px;
+  line-height: 22px;
   word-wrap: break-word; }
 
 .reveal code {
@@ -204,12 +204,12 @@ body {
 
 .reveal small {
   display: inline-block;
-  font-size: 0.6em;
+  font-size: 0.4em;
   line-height: 1.2em;
-  vertical-align: top; }
+  vertical-align: middle; }
 
 .reveal small * {
-  vertical-align: top; }
+  vertical-align: middle; }
 
 /*********************************************
  * LINKS

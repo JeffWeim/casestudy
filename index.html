@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Happy Money Talk</title>
+		<title>CGI Federal Case Study</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -22,74 +22,184 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
+	
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<!-- Slide 1 -->
 				<section>
-					<h1>CGI Federal</h1>
+					<h2>CGI Federal - Case Study</h2>
 
-					<h2>Casestudy</h2>
+					<img src="./assets/main.png" style="max-width: 400px;">
+					
+					<h3>Jeff Weimer</h3>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
+						<ul style="font-size: 10px;">
+							<li>My name is Jeff Weimer and you guys tasked me with presenting this case study about a project I worked on.</li>
+							<li>Let's dive right into what the project was about!</li>
+						</ul>
+						
 					</aside>
-
-					<!-- <pre>
-						<code data-trim data-noescape class="javascript">
-								import '@babel/polyfill' // fixes Symbol errors in ie11
-								import picturefill from 'picturefill
-						</code>
-					</pre>
-
-					<pre class="fragment fade-up">
-						<code data-trim data-noescape class="javascript">
-								import '@babel/polyfill' // fixes Symbol errors in ie11
-								import picturefill from 'picturefill
-						</code>
-					</pre> -->
 				</section>
 
 				<!-- Slide 2 -->
 				<section>
-					<h1>Background</h1>
+					<h2>Background</h2>
 
 					<section>
 						<ul>
-							<li >Client had a new office - no one knows what they do</li>
-							<li style="list-style-type: none; text-align: center;">
-									<img style="width: 425px; height: 240px; object-fit: cover;" src="https://media.giphy.com/media/l41lMyj84vgqqHrNK/giphy.gif">
-							</li>
-							<li class="fragment">Clean and simple way to show guests about clients company</li>
+							<li>CGI was in the process of building a new office</li>
+							<li class="fragment">They were looking for a clean and simple way to show their guests about their company</li>
 						</ul>
+						
+						<aside class="notes">
+							<ul style="font-size: 12px;">
+								<li>CGI is a large canadian conglomerate that focuses on IT but also work in healthcare, communications, manufacturing, government, etc.</li>
+								<li>CGI was building a new office</li>
+								<li>👇</li>
+								<li>They have a large global presence, but very few people can easily understand what they do</li>
+								<li>With this new office, they wanted to add some unique pieces in their lobby and board rooms</li>
+							</ul>		
+						</aside>
 					</section>
 
 					<section>
 						<ul>
-							<li >Make their guest feel like the company is up to cool stuff</li>
-							<li style="list-style-type: none; text-align: center;">
-								<img style="width: 425px; height: 240px; object-fit: cover;" src="https://media.giphy.com/media/1Qdp4trljSkY8/giphy.gif">
+							<li>The way CGI would do this -> an interactive display with insights into the company</li>
+							<li class="fragment">
+								An added bonus: Make their guest feel like the company is up to cool stuff
+								<br>
+								<img class="fragment" style="width: 385px; height: 200px; object-fit: cover;" src="https://media.giphy.com/media/1Qdp4trljSkY8/giphy.gif">
 							</li>
 						</ul>
+						
+						<aside class="notes">
+							<ul style="font-size: 12px;">
+								<li>[slide first] CGI is somewhat of a tech company, they needed to not be handing out flyers to guests</li>
+								<li>👇</li>
+							</ul>		
+						</aside>
 					</section>
 				</section>
 
 				<!-- Slide 3 -->
 				<section>
-					<h1>Requirements</h1>
+					<h2>Requirements</h2>
 
-					<section>
-
-					</section>
+					<ol>
+						<li>Create a stand alone application</li>
+						<li class="fragment">It had be interactive, with a clean and concise user interface</li>
+						<li class="fragment">The content had to be controlled via a CMS</li>
+						<li class="fragment">Deliver the app before their office opened - short turnaround</li>
+					</ol>
 				</section>
 
 				<!-- Slide 4 -->
 				<section>
-					<h1>Implementation</h1>
+					<h2>Upfront Challenges</h2>
 
-					<section>
+					<ol>
+						<li>Make boring content be somewhat interesting - easily consumed</li>
+						<li class="fragment">Going to be building a stand alone application</li>
+						<li class="fragment">The CMS would have to be hosted on CGI's intranet</li>
+					</ol>
+				</section>
 
-					</section>
+				<!-- Slide 5 -->
+				<section>
+					<h2>Implementation</h2>
+					<p>First Steps</p>
+				</section>
+				
+				<!-- Slide 6 -->
+				<section>
+					<ul>
+						<li>
+							Pick the stack:
+							<ul>
+								<li class="fragment">Electron</li>
+								<li class="fragment">React + Redux</li>
+								<li class="fragment">WebGL</li>
+								<li class="fragment">Wordpress using WP-JSON</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				
+				<!-- Slide 7 -->
+				<section>
+					<h2>Implementation</h2>
+					<p>Starting the work</p>
+				</section>
+				
+				<!-- Slide 8 -->
+				<section>
+					<ul>
+						<li class="">Talk with the team involved</li>
+						<li class="fragment">Find a boilerplate</li>
+						<li class="fragment">Familiarize with the new tools</li>
+						<li class="fragment">Conceptualize the app's architecture</li>
+					</ul>
+				</section>
+				
+				<!-- Slide 9 -->
+				<section>
+					<h2>Implementation</h2>
+					<p>Specific Challenges</p>
+				</section>
+				
+				<!-- Slide 10 -->
+				<section>
+					<ul>
+						<li>Getting the animations just right. GSAP or CSS? 🤔</li>
+						<li class="fragment">Ensuring the app works like it should on a touch device</li>
+						<li class="fragment">Adding some amount of 'native' feel to app. 'Not a website...'</li>
+						<li class="fragment">Keeping a high FPS. The app is the user's sole focus</li>
+						
+						<aside class="notes">
+							<ul>
+								<li>I started with GSAP to do animations and I found there to be quite a bit of jittering lack of performance. My guess as to why, was the he WebGL side of the JS thread was taking a lot of bandwidth. I also did not like the added boilerplate of GSAP. Once I introduced CSSTransitions, animations felt much smoother and were more in line with what design expected.</li>
+								<li>Get my hands on an actual device. Developing this in the electron dev window vs viewing the built app running on a touch device</li>
+								<li>Even though we were building this in Electron which is just a chrome browser, there was an ask by design to add some 'native' touches to the app. So these included little things live swipe actions, touch animations, and scroll behavior. It took some extra effort to find the right tool and implement them properly</li>
+								
+							</ul>		
+						</aside>
+					</ul>
+				</section>
+
+				<!-- Slide 11 -->
+				<section>
+					<h2>Implementation</h2>
+					<p>The details</p>
+				</section>
+				
+				<section>
+					<img src="./assets/image1.png" >
+					<small>Getting the data needed for the app</small>
+					
+					<aside class="notes">
+						<ul style="font-size: 12px;">
+							<li>I want to point out, at a high level, what I feel are just some of the important pieces of the application</li>
+						</ul>		
+					</aside>
+				</section>
+
+				<!-- Slide 12 -->
+				<section>
+					<img src="./assets/image2.png" >
+					<small>A common pattern used through out the app for the transitioning of components</small>
+				</section>
+				
+				<!-- Slide 13 -->
+				<section>
+					<img src="./assets/image3.png" >
+					<small>...How the app's components would be shown/hidden in CSS</small>
+				</section>
+				
+				<!-- Slide 14 -->
+				<section>
+					<h2>Show & Tell</h2>
 				</section>
 			</div>
 		</div>
