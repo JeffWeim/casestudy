@@ -35,8 +35,12 @@
 					<h3>Jeff Weimer</h3>
 
 					<aside class="notes">
-						<ul style="font-size: 10px;">
-							<li>My name is Jeff Weimer and you guys tasked me with presenting this case study about a project I worked on.</li>
+						<ul style="font-size: 13px;">
+							<li>Thank you for having me. My name is Jeff Weimer. I want to show you guys a casestudy about an application I worked on at Envoy</li>
+							<li>
+								I'll be talking about the background, requirements, highlight some of the upfront challenges, go through the implentation then I'll show some key pieces of the app and lastly a demo of the application itself
+								
+							</li>
 							<li>Let's dive right into what the project was about!</li>
 						</ul>
 						
@@ -50,34 +54,39 @@
 					<section>
 						<ul>
 							<li>CGI was in the process of building a new office</li>
+							<li class="fragment">Our sister company, Leviathan acquired the project to build</li>
 							<li class="fragment">They were looking for a clean and simple way to show their guests about their company</li>
 						</ul>
 						
 						<aside class="notes">
-							<ul style="font-size: 12px;">
-								<li>CGI is a large canadian conglomerate that focuses on IT but also work in healthcare, communications, manufacturing, government, etc.</li>
-								<li>CGI was building a new office</li>
-								<li>👇</li>
-								<li>They have a large global presence, but very few people can easily understand what they do</li>
-								<li>With this new office, they wanted to add some unique pieces in their lobby and board rooms</li>
+							<p>Background</p>
+							<ul style="font-size: 13px;">
+								<li>
+									CGI is a large canadian conglomerate that focuses on IT but also works in healthcare, communications, manufacturing, government, etc.
+									<br>
+									They were building a new office near Washington DC. It would host some of their more important clients
+								</li>
+								<li>Leviathan initially acquired the project but they were short of developer hours. They reached our to our office to have a UI developer help in building the application</li>
+								<li>They have a large global presence, but very few people can easily understand what they do or the successes they've had as a company</li>
 							</ul>		
 						</aside>
 					</section>
 
 					<section>
 						<ul>
-							<li>The way CGI would do this -> an interactive display with insights into the company</li>
+							<li>The way CGI would do this -> an interactive displays with insights into the company</li>
 							<li class="fragment">
-								An added bonus: Make their guest feel like the company is up to cool stuff
+								An added bonus: Their guests feel like the company is up to cool stuff
 								<br>
 								<img class="fragment" style="width: 385px; height: 200px; object-fit: cover;" src="https://media.giphy.com/media/1Qdp4trljSkY8/giphy.gif">
 							</li>
 						</ul>
 						
 						<aside class="notes">
-							<ul style="font-size: 12px;">
-								<li>[slide first] CGI is somewhat of a tech company, they needed to not be handing out flyers to guests</li>
-								<li>👇</li>
+							<p>Background</p>
+							<ul style="font-size: 13px;">
+								<li>So with this new office they'd add some unique pieces inside their lobby and conference rooms for people to interact with in their free time</li>
+								<li>There was a little bit of "hey we're cool" to it as well</li>
 							</ul>		
 						</aside>
 					</section>
@@ -91,8 +100,17 @@
 						<li>Create a stand alone application</li>
 						<li class="fragment">It had be interactive, with a clean and concise user interface</li>
 						<li class="fragment">The content had to be controlled via a CMS</li>
-						<li class="fragment">Deliver the app before their office opened - short turnaround</li>
+						<li class="fragment">Deliver the app before their office opened - short turn around</li>
 					</ol>
+					
+					<aside class="notes">
+						<p>Requirements</p>
+						<ul style="font-size: 13px;">
+							<li>Intro - Let's move into some of the requirements that we would have to meet for this project</li>
+							<li>1 - B/c it was going to be a full screen app it needed to be a stand alone application</li>
+							<li>2 - We were actually improving upon a design by our sister company in Chicago. They had something  but it was very clutter and did not meet the clean and concise part of the requirement</li>
+						</ul>		
+					</aside>
 				</section>
 
 				<!-- Slide 4 -->
@@ -101,9 +119,19 @@
 
 					<ol>
 						<li>Make boring content be somewhat interesting - easily consumed</li>
-						<li class="fragment">Going to be building a stand alone application</li>
-						<li class="fragment">The CMS would have to be hosted on CGI's intranet</li>
+						<li class="fragment">Building a stand alone application</li>
+						<li class="fragment">No actual touch device to test on</li>
 					</ol>
+					
+					<aside class="notes">
+						<p>Upfront Challenges</p>
+						<ul style="font-size: 13px;">
+							<li>Intro - Let's move to some of the upfront Challenges that we, being the designers and developers, faced on this project</li>
+							<li>1 - as I mentioned before we had to re-tool an initial design</li>
+							<li>2 - the challenge here was that I or anyone else on the team, have much experience in doing this. So I'd have to learn quick and go fast</li>
+							<li>3 - This should be an obvious issue for anyone. I could build the app on my computer and see everything but not being able to use the app on a touch device was troublesome...initially</li>
+						</ul>		
+					</aside>
 				</section>
 
 				<!-- Slide 5 -->
@@ -125,12 +153,29 @@
 							</ul>
 						</li>
 					</ul>
+					
+					<aside class="notes">
+						<p>Implementation - First Steps</p>
+						<ul style="font-size: 13px;">
+							<li>Electron - I felt to meet the stand alone application requirement, there wasn't really any other option. Electron was/is proven and I felt confident in being able to spin up a dev environment using Electron. I'll cover this more later. Also, Microsoft hadn't yet released react-native-windows yet or I may have considered that as an option</li>
+							<li>React - the reason I choose React was that we were building a data-driven app. React was the UI framework I felt most comfortable with in executing on that. </li>
+							<li>WebGL - Our sister office were the ones the project was initially brought to. So the app was always going to have this peice. For me, it was more build the application to work seamlessly with this piece. (Talk about WebGL)</li>
+							<li>Wordpress - This part of the tech-stack was pre-picked by our Chicago office. They have used this setup before on some much larger installations and felt it was proven. I didn't have any issues here and I felt very comfortable in setting this up and using it</li>
+						</ul>		
+					</aside>
 				</section>
 				
 				<!-- Slide 7 -->
 				<section>
 					<h2>Implementation</h2>
 					<p>Starting the work</p>
+					
+					<aside class="notes">
+						<p>Implementation - Starting The Work</p>
+						<ul style="font-size: 13px;">
+							<li>So now I'm going to move a step further into the details of how I went about executing on the asks</li>
+						</ul>		
+					</aside>
 				</section>
 				
 				<!-- Slide 8 -->
@@ -141,12 +186,29 @@
 						<li class="fragment">Familiarize with the new tools</li>
 						<li class="fragment">Conceptualize the app's architecture</li>
 					</ul>
+					
+					<aside class="notes">
+						<p>Implementation - Starting The Work</p>
+						<ol style="font-size: 13px;">
+							<li>I want as much context from the project manager and the designer as possible. I think that it makes for a much smoother project overall. Things I want to know include, functional specs and getting more info on the look and feel of the design to pick up on things that may not come across in comps</li>
+							<li>B/c of the timeline I though a boilerplate would be good. There were a few moving pieces tech-wise and this would help bring everything together. I was looking mainly for one that had electron and react/redux built in</li>
+							<li>B/c I was working with a set of new tools and a new environment, I wanted to really familiarize myself with everything. I took some time to try and understand how everything worked. Things I did included ensuring the webpack build did everything I wanted, testing the electron build worked and generated an app, and figuring out how to run the docker environment</li>
+							<li>The way I go about this is different per project. If an app is quite complicated it may be I start with some sketches then move into prototyping. In this case, the core react app wouldn't be that complicated, so I think I just started by building little functioning pieces to see if I could get happen what I wanted to happen</li>
+						</ol>		
+					</aside>
 				</section>
 				
 				<!-- Slide 9 -->
 				<section>
 					<h2>Implementation</h2>
 					<p>Specific Challenges</p>
+					
+					<aside class="notes">
+						<p>Implementation - Specific Challenges</p>
+						<ol style="font-size: 13px;">
+							<li>Now I want to cover some specific implementation challenges I faced. Theses were challenges that came up once I was in the weeds of building the ap itself.</li>
+						</ol>		
+					</aside>
 				</section>
 				
 				<!-- Slide 10 -->
@@ -156,14 +218,19 @@
 						<li class="fragment">Ensuring the app works like it should on a touch device</li>
 						<li class="fragment">Adding some amount of 'native' feel to app. 'Not a website...'</li>
 						<li class="fragment">Keeping a high FPS. The app is the user's sole focus</li>
+						<li class="fragment">Missing client feedback 👻</li>
 						
 						<aside class="notes">
-							<ul>
+							<p>Implementation - Specific Challenges</p>
+							<ol style="font-size: 13px;">
 								<li>I started with GSAP to do animations and I found there to be quite a bit of jittering lack of performance. My guess as to why, was the he WebGL side of the JS thread was taking a lot of bandwidth. I also did not like the added boilerplate of GSAP. Once I introduced CSSTransitions, animations felt much smoother and were more in line with what design expected.</li>
 								<li>Get my hands on an actual device. Developing this in the electron dev window vs viewing the built app running on a touch device</li>
 								<li>Even though we were building this in Electron which is just a chrome browser, there was an ask by design to add some 'native' touches to the app. So these included little things live swipe actions, touch animations, and scroll behavior. It took some extra effort to find the right tool and implement them properly</li>
-								
-							</ul>		
+								<li>So b/c the app would be fullscreen, it has even more of a users focus when they're using it. I really wanted to ensure that the app would run as smooth as it could. I did a lot of animation checks using chrome devtools and react devtools where I'd make sure the FPS was remaining as high as I could keep it and that React wasn't running unnecessary renders</li>
+								<li>
+									The project had some un-usual gaps. We rarely got much feedback and had to work through another PM in the Chicago office.
+								</li>
+							</ol>		
 						</aside>
 					</ul>
 				</section>
@@ -171,33 +238,48 @@
 				<!-- Slide 11 -->
 				<section>
 					<h2>Implementation</h2>
-					<p>The details</p>
+					<p>Code Details</p>
 				</section>
 				
+				<!-- Slide 12 -->
 				<section>
 					<img src="./assets/image1.png" >
 					<small>Getting the data needed for the app</small>
 					
 					<aside class="notes">
-						<ul style="font-size: 12px;">
+						<p>Implementation - Code Details</p>
+						<ul style="font-size: 13px;">
 							<li>I want to point out, at a high level, what I feel are just some of the important pieces of the application</li>
 						</ul>		
 					</aside>
 				</section>
 
-				<!-- Slide 12 -->
+				<!-- Slide 13 -->
 				<section>
 					<img src="./assets/image2.png" >
 					<small>A common pattern used through out the app for the transitioning of components</small>
+					
+					<aside class="notes">
+						<ul>
+							<li>This pattern uses React Transition Group to wrap my components that will be transitioning in and out</li>
+							<li>A key part of getting the CSSTransition to work is using that timeout prop. Wasn't well documented at the time I built this. I had to learn a quite a few important details about how React Transition Group works</li>
+						</ul>
+					</aside>
 				</section>
 				
-				<!-- Slide 13 -->
+				<!-- Slide 14 -->
 				<section>
 					<img src="./assets/image3.png" >
 					<small>...How the app's components would be shown/hidden in CSS</small>
 				</section>
 				
-				<!-- Slide 14 -->
+				<!-- Slide 15 -->
+				<section>
+					<img src="./assets/image4.png" >
+					<small>This is what controls which components to show and the 'level' that the application is at</small>
+				</section>
+				
+				<!-- Slide 16 -->
 				<section>
 					<h2>Show & Tell</h2>
 				</section>
